@@ -4,7 +4,11 @@
   "description": "simple pager optionally without numbers",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "code42day/el": "0.1.0",
+    "component/events": "1.0.4",
+    "component/emitter": "1.1.1"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",

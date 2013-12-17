@@ -34,7 +34,8 @@ Pager.prototype.onclick = function onclick(e) {
   this.select(page);
 };
 
-Pager.prototype.select = function select(page, silent) {
+Pager.prototype.select = function select(page, opts) {
+  var silent = opts && opts.silent;
   if (page === this._current) {
     return;
   }

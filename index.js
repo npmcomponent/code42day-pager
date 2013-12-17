@@ -1,5 +1,5 @@
 var Emitter = require('emitter');
-var events = require('events');
+var events = require('event');
 var el = require('el');
 
 module.exports = Pager;
@@ -11,8 +11,7 @@ function Pager(el) {
   this._total = 0;
   this._current = 0;
   this.el = el;
-  this.events = events(this.el, this);
-  this.events.bind('click a');
+  events.bind(el, 'click', this.onclick.bind(this));
 }
 
 Emitter(Pager.prototype);
@@ -24,7 +23,7 @@ Pager.prototype.total = function total(t) {
 };
 
 Pager.prototype.onclick = function onclick(e) {
-  var page, target = e.target || e.src;
+  var page, target = e.target || e.srcElement;
   page = Array.prototype.indexOf.call(this.el.children, target);
   if (page < 0) {
     return;

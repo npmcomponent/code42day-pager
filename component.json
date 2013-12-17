@@ -3,6 +3,7 @@
   "repo": "code42day/pager",
   "description": "simple pager optionally without numbers",
   "version": "0.0.1",
+  "demo": "http://code42day.github.io/pager/",
   "keywords": [],
   "dependencies": {
     "code42day/el": "0.1.0",

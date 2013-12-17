@@ -1,3 +1,5 @@
+all: lint build
+
 lint:
 	jshint index.js
 
@@ -10,4 +12,4 @@ components: component.json
 clean:
 	rm -fr build components
 
-.PHONY: clean lint
+.PHONY: clean lint all

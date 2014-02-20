@@ -1,6 +1,6 @@
-var Emitter = require('emitter');
-var events = require('event');
-var el = require('el');
+var Emitter = require('component-emitter');
+var events = require('component-event');
+var el = require('code42day-el');
 
 module.exports = Pager;
 

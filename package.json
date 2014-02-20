@@ -1,0 +1,16 @@
+{
+  "name": "code42day-pager",
+  "description": "simple pager optionally without numbers",
+  "version": "0.2.0",
+  "keywords": [],
+  "main": "index.js",
+  "styles": [
+    "pager.css"
+  ],
+  "dependencies": {
+    "code42day-el": "git://github.com/npmcomponent/code42day-el.git",
+    "component-event": "git://github.com/npmcomponent/component-event.git",
+    "component-emitter": "git://github.com/npmcomponent/component-emitter.git"
+  },
+  "license": "MIT"
+}
